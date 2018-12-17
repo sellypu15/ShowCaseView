@@ -340,8 +340,8 @@ public class GuideView extends FrameLayout {
             xMessageView = 0;
 
 
-        //set message view bottom
-        if (targetRect.top + (indicatorHeight) > getHeight() / 2) {
+        //set message view bottom, divide screen into 3 part
+        if (targetRect.top + (indicatorHeight) > getHeight() / 3) {
             isTop = false;
             yMessageView = (int) (targetRect.top - mMessageView.getHeight() - indicatorHeight);
         }
